@@ -106,6 +106,7 @@ public class RegisterFragment extends Fragment {
 
             try {
 
+
                 MyConstant myConstant = new MyConstant();
                 AddUserThread addUserThread = new AddUserThread(getActivity());
                 addUserThread.execute(name, user, password, genderString, myConstant.getUrlAddUser());
