@@ -104,9 +104,27 @@ public class RegisterFragment extends Fragment {
             myAlert.normalDialog("No Gender", "Please Choose Gender");
         } else {
 
-            
+            try {
 
-        }
+                MyConstant myConstant = new MyConstant();
+                AddUserThread addUserThread = new AddUserThread(getActivity());
+                addUserThread.execute(name, user, password, genderString, myConstant.getUrlAddUser());
+
+                String result = addUserThread.get();
+
+                if (Boolean.parseBoolean(result)) {
+                    getActivity().getSupportFragmentManager().popBackStack();
+                } else {
+                    myAlert.normalDialog("Cannot Register", "Please Try Again");
+                }
+
+
+
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+        }   // if
 
 
     }
