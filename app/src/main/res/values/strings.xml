@@ -8,6 +8,7 @@
 
     <string name="open">Open Drawer</string>
     <string name="close">Close Drawer</string>
+    <string name="title_activity_maps">Map</string>
 
 
 </resources>

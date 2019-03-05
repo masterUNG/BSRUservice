@@ -37,12 +37,84 @@
         android:layout_width="320dp"
         android:layout_height="match_parent">
 
+        <ImageView
+            android:src="@drawable/avata"
+            android:scaleType="centerInside"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+
         <TextView
             android:textStyle="bold"
             android:textSize="48sp"
             android:text="Drawer Menu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+
+        <!--Home-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ic_action_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:clickable="true"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp"
+                android:text="Home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <!--Map-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ic_action_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtShowMap"
+                android:clickable="true"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp"
+                android:text="Show Map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <!--Add Item-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ic_action_add_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:clickable="true"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp"
+                android:text="Add Item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
 
     </LinearLayout>
 
